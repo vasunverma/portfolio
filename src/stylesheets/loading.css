@@ -1,0 +1,19 @@
+.loader {
+  background-color: #202023;
+  color: #f0e7db;
+}
+
+.custom-spinner {
+    width: 8em; /* Adjust the width and height as needed */
+    height: 8em;
+    border: 0.2em solid transparent;
+    border-top-color: #f0e7db;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+  }
+  
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
