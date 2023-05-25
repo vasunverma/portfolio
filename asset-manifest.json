@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.bc7a48f2.css",
-    "main.js": "/portfolio/static/js/main.f971545e.js",
-    "static/media/SmartAirPurifierProject.jpg": "/portfolio/static/media/SmartAirPurifierProject.4044c192dc80f1c09e83.jpg",
-    "static/media/Oyo.png": "/portfolio/static/media/Oyo.cabda9c8a44d62e9efd1.png",
-    "static/media/AudioBidProject.png": "/portfolio/static/media/AudioBidProject.1ca8151e9094f9778b22.png",
-    "static/media/BinaryClassificationProject.png": "/portfolio/static/media/BinaryClassificationProject.13370583e1bf5cbcb985.png",
-    "index.html": "/portfolio/index.html",
-    "main.bc7a48f2.css.map": "/portfolio/static/css/main.bc7a48f2.css.map",
-    "main.f971545e.js.map": "/portfolio/static/js/main.f971545e.js.map"
+    "main.css": "/Portfolio/static/css/main.bc7a48f2.css",
+    "main.js": "/Portfolio/static/js/main.eb98449a.js",
+    "static/media/SmartAirPurifierProject.jpg": "/Portfolio/static/media/SmartAirPurifierProject.4044c192dc80f1c09e83.jpg",
+    "static/media/Oyo.png": "/Portfolio/static/media/Oyo.cabda9c8a44d62e9efd1.png",
+    "static/media/AudioBidProject.png": "/Portfolio/static/media/AudioBidProject.1ca8151e9094f9778b22.png",
+    "static/media/BinaryClassificationProject.png": "/Portfolio/static/media/BinaryClassificationProject.13370583e1bf5cbcb985.png",
+    "index.html": "/Portfolio/index.html",
+    "main.bc7a48f2.css.map": "/Portfolio/static/css/main.bc7a48f2.css.map",
+    "main.eb98449a.js.map": "/Portfolio/static/js/main.eb98449a.js.map"
   },
   "entrypoints": [
     "static/css/main.bc7a48f2.css",
-    "static/js/main.f971545e.js"
+    "static/js/main.eb98449a.js"
   ]
 }
