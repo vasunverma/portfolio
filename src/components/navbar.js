@@ -29,7 +29,6 @@ export const Navbar = () => {
         position="sticky"
         pt="30px"
         backgroundColor="#202023"
-        color="#f0e7db"
         top="0"
         zIndex="1">
             <HStack spacing="10px">
@@ -38,10 +37,10 @@ export const Navbar = () => {
             <Spacer />
             {isMobile ? (
                 <>  
-                    <Button variant="ghost" onClick={onOpen} aria-label="Menu"><HamburgerIcon/></Button>
+                    <Button variant="ghost" color="#f0e7db" onClick={onOpen} aria-label="Menu"><HamburgerIcon/></Button>
                     <Drawer placement="right" onClose={onClose} isOpen={isOpen}>
                         <DrawerOverlay >
-                            <DrawerContent backgroundColor="#202023">
+                            <DrawerContent backgroundColor="#202023" color="#f0e7db">
                                 <DrawerHeader>
                                     <HStack>
                                         <Text>Menu</Text>
