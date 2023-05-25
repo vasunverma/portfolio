@@ -16,14 +16,15 @@ export const About = () => {
                     </Text>
                     <br />
                     <Text textAlign="justify" justifyContent="center">
-                        I've worked using different technologies, both backend and frontend. I'm currently working using Django and Python. 
-                        My goal is to build highly performant applications that solve real-world problems and provide users with an awesome 
-                        experience.
+                    I have experience working with a variety of technologies, handling both backend and frontend development. 
+                    Currently, I am actively engaged in using React and Python. 
+                    My primary objective is to develop high-performing applications that effectively address real-world challenges and deliver an exceptional user experience.
                     </Text>
                     <br />
                     <Text textAlign="justify" justifyContent="center">
-                        You can read more about me on my <Link _hover={{}} color='teal.500' href='https://www.linkedin.com/in/vasunverma/'>LinkedIn</Link> page, 
-                        or Check my <Link _hover={{}} color='teal.500' href='https://github.com/VasuNVerma/'>Github</Link> for some cool things. 
+                    You can learn more about me by checking out my <Link _hover={{}} color='teal.500' href='https://www.linkedin.com/in/vasunverma/'>LinkedIn</Link> page, 
+                    exploring my <Link _hover={{}} color='teal.500' href='https://github.com/VasuNVerma/'>GitHub</Link> ,
+                    or reviewing my <Link _hover={{}} color='teal.500' href='https://vasunverma.github.io/Vasu_Verma_Resume.pdf'>Resume</Link>.
                     </Text>
                         
                 </Box>
