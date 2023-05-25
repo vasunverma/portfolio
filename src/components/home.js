@@ -14,7 +14,7 @@ export const Home = () => {
 
     return(
         <Flex p="10px" alignItems="center" 
-        justifyContent="center" margin="auto" direction="column" id="home" maxWidth="800px">
+        justifyContent="center" margin="auto" direction="column" id="home" maxWidth="800px" pt="30px">
             <Box>
                 {/* <Image src={ProgrammerWorking} alt='Progammer Working' /> */}
             </Box>
@@ -22,7 +22,7 @@ export const Home = () => {
             (
                 <>
                     <Text width="100%">Hi, I am</Text>
-                    <Heading as='h1' size="2xl">Vasu Naman Verma</Heading>
+                    <Heading as='h1' size="xl">Vasu Naman Verma</Heading>
                     <br/>
                     <VStack>
                         {/* <Text width="100%" ml="20px">A</Text> */}

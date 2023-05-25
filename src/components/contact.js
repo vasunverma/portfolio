@@ -2,11 +2,23 @@ import { useClipboard, Flex, Text, Heading, IconButton, useColorModeValue,
         Link, Stack, Tooltip} from "@chakra-ui/react";
 import { BsGithub, BsLinkedin} from 'react-icons/bs';
 import { MdEmail } from 'react-icons/md';
+import { useEffect, useState } from "react";
+
 
 
 export const Contact = () => {
 
     const { hasCopied, onCopy } = useClipboard('vermavasun@gmail.com');
+    const [isMobile, setIsMobile] = useState(false);
+
+    const handleResize = () => {
+        setIsMobile(window.innerWidth <= 768);
+      };
+    
+    useEffect(() => {
+        window.addEventListener("resize", handleResize);
+        handleResize();
+      }, []);
     
     return(
             <Flex p="10px" alignItems="center" 
@@ -67,7 +79,11 @@ export const Contact = () => {
                     </Link>
                 </Stack>
                 <br/>
-                <Text color="grey">© 2023 Vasu Naman Verma. All Rights Reserved.</Text>
+                {isMobile ? (
+                    <Text fontSize="10px" color="grey">© 2023 Vasu Naman Verma. All Rights Reserved.</Text>
+                ): (
+                    <Text color="grey">© 2023 Vasu Naman Verma. All Rights Reserved.</Text>
+                )}
             </Flex>
         );
 }
