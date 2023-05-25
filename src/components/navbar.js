@@ -29,6 +29,7 @@ export const Navbar = () => {
         position="sticky"
         pt="30px"
         backgroundColor="#202023"
+        color="#f0e7db"
         top="0"
         zIndex="1">
             <HStack spacing="10px">

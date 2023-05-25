@@ -60,12 +60,12 @@ export const Experience = () => {
                                         <Spacer />
                                         <Box w="100%">
                                             <HStack direction='row'>
-                                                <Code color="#" children="JAVA" />
+                                                <Code colorScheme="blue" children="JAVA" />
                                                 <Code colorScheme="red" children="Swing" />
                                                 <Code colorScheme="teal" children="SQL" />
-                                                <Code color="#" children="XML" />
-                                                <Code color="orange" children="MAVEN" />
-                                                <Code color="#" children="SOAP" />
+                                                <Code colorScheme="pink" children="XML" />
+                                                <Code colorScheme="orange" children="MAVEN" />
+                                                <Code colorScheme="purple" children="SOAP" />
                                             </HStack>
                                         </Box>
                                     </VStack>
@@ -92,12 +92,12 @@ export const Experience = () => {
                                         <Spacer />
                                         <Box w="100%">
                                             <HStack direction='row'>
-                                                <Code color="#" children="JAVA" />
+                                                <Code colorScheme="blue" children="JAVA" />
                                                 <Code colorScheme="red" children="Swing" />
                                                 <Code colorScheme="teal" children="SQL" />
-                                                <Code color="#" children="XML" />
-                                                <Code color="orange" children="MAVEN" />
-                                                <Code color="#" children="SOAP" />
+                                                <Code colorScheme="pink" children="XML" />
+                                                <Code colorScheme="orange" children="MAVEN" />
+                                                <Code colorScheme="purple" children="SOAP" />
                                             </HStack>
                                         </Box>
                                     </VStack>
@@ -143,12 +143,12 @@ export const Experience = () => {
                                         <Spacer />
                                         <Box w="100%">
                                             <HStack direction='row'>
-                                            <Code color="#" children="Ruby" />
-                                            <Code colorScheme="red" children="Rails" />
-                                            <Code colorScheme="teal" children="PostgreSQL" />
-                                            <Code color="#" children="JAVA" />
-                                            <Code color="#" children="SpringBoot" />
-                                            <Code colorScheme="orange" children="AWS S3" />
+                                                <Code colorScheme="blue" children="Ruby" />
+                                                <Code colorScheme="red" children="Rails" />
+                                                <Code colorScheme="teal" children="PostgreSQL" />
+                                                <Code colorScheme="pink" children="JAVA" />
+                                                <Code colorScheme="orange" children="SpringBoot" />
+                                                <Code colorScheme="purple" children="AWS S3" />
                                             </HStack>
                                         </Box>
                                     </VStack>
@@ -175,12 +175,12 @@ export const Experience = () => {
                                         <Spacer />
                                         <Box w="100%">
                                             <HStack direction='row'>
-                                            <Code color="#" children="Ruby" />
-                                            <Code colorScheme="red" children="Rails" />
-                                            <Code colorScheme="teal" children="PostgreSQL" />
-                                            <Code color="#" children="JAVA" />
-                                            <Code color="#" children="SpringBoot" />
-                                            <Code colorScheme="orange" children="AWS S3" />
+                                                <Code colorScheme="blue" children="Ruby" />
+                                                <Code colorScheme="red" children="Rails" />
+                                                <Code colorScheme="teal" children="PostgreSQL" />
+                                                <Code colorScheme="pink" children="JAVA" />
+                                                <Code colorScheme="orange" children="SpringBoot" />
+                                                <Code colorScheme="purple" children="AWS S3" />
                                             </HStack>
                                         </Box>
                                     </VStack>

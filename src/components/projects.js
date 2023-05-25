@@ -15,7 +15,7 @@ export const Projects = () => {
         <Card size="md" backgroundColor="#312b46">
           <CardBody>
             <Image src={AudioBidImage} alt="AudioBid Portal" borderRadius="lg" />
-            <Stack mt="6" spacing="3">
+            <Stack mt="6" spacing="3" color="#f0e7db">
             <Link _hover={{}} href="https://www.amdocs.com"><Heading size="md">Audio Bid <FontAwesomeIcon icon={faSquareArrowUpRight} style={{color: "#d121c9",}} /></Heading></Link>
                 <Text>
                   AudioBid is a Django-based voice transcription job portal with dynamic pricing and Google OAuth integration. 
@@ -39,7 +39,7 @@ export const Projects = () => {
         <Card size="md" backgroundColor="#312b46">
           <CardBody>
             <Image src={BinaryClassificationImage} alt="Binary Classification Project" borderRadius="lg"/>
-            <Stack mt="6" spacing="3">
+            <Stack mt="6" spacing="3" color="#f0e7db">
                 <Link _hover={{}} href="https://www.amdocs.com"><Heading size="md">Binary Classification with High-Dimensional Data <FontAwesomeIcon icon={faSquareArrowUpRight} style={{color: "#d121c9",}} /></Heading></Link>
                 <Text>
                   ML models were developed using R, Caret, Baruta, XgBoost, Tensorflow, Keras, and RandomForest for binary classification with high-dimensional data. 
@@ -62,7 +62,7 @@ export const Projects = () => {
         <Card size="md" backgroundColor="#312b46">
           <CardBody>
             <Image src={SmartAirPurifierImage} alt="Green double couch with wooden legs" borderRadius="lg" />
-            <Stack mt="6" spacing="3">
+            <Stack mt="6" spacing="3" color="#f0e7db">
                 <Link _hover={{}} href="https://www.amdocs.com"><Heading size="md">Smart Air Purifier <FontAwesomeIcon icon={faSquareArrowUpRight} style={{color: "#d121c9",}} /></Heading></Link>
                 <Text>
                   A budget-friendly smart air purifier was designed and developed using C++, Arduino, AWS IoT, HTML/CSS, JavaScript, and P5.js. 
@@ -85,7 +85,7 @@ export const Projects = () => {
         {/* <Card size="md" backgroundColor="#6845a8">
           <CardBody>
             <Image src="https://images.unsplash.com/photo-1627398242454-45a1465c2479?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1548&q=80" alt="Green double couch with wooden legs" borderRadius="lg" />
-            <Stack mt="6" spacing="3">
+            <Stack mt="6" spacing="3" color="#f0e7db">
                 <Link _hover={{}} href="https://www.amdocs.com"><Heading size="md">Audio Bid <FontAwesomeIcon icon={faSquareArrowUpRight} style={{color: "#d121c9",}} /></Heading></Link>
                 <Text>
                   A full-stack web application using Django to provide voice transcription jobs to users and allow them to bid on jobs. 
