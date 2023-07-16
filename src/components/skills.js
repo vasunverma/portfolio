@@ -1,5 +1,8 @@
-import { Flex, Badge, Box, Heading, SimpleGrid } from "@chakra-ui/react";
+import { Flex, Badge, Link, Box, Wrap, Heading, SimpleGrid, VStack, HStack } from "@chakra-ui/react";
 import { useState, useEffect } from "react";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import {  faSquareArrowUpRight } from '@fortawesome/free-solid-svg-icons'
+import "../stylesheets/skills.css";
 
 export const Skills = () => {
     const [isMobile, setIsMobile] = useState(false);
@@ -18,7 +21,53 @@ export const Skills = () => {
             <Flex p="10px" alignItems="left" 
             justifyContent="center" margin="auto" 
             direction="column" id="about" maxWidth="800px">
-                <Heading p="20px 20px 20px 0px" justifyContent="center" display="flex">What I Know</Heading>
+                <Heading p="20px 20px 30px 0px" justifyContent="center" display="flex">What I Know</Heading>
+                <VStack mb="30px">
+                    <Heading size="md" mb="20px" display="flex" justifyContent="center">Full Stack Development</Heading>
+                    <Wrap spacing="20px" justify="center" w="400px">
+                        <span className="developmentTags">C++</span>
+                        <span className="developmentTags">JAVA</span>
+                        <span className="developmentTags">Python</span>
+                        <span className="developmentTags">JavaScript</span>
+                        <span className="developmentTags">PostgreSQL</span>
+                        <span className="developmentTags">HTML</span>
+                        <span className="developmentTags">CSS</span>
+                        <span className="developmentTags">Django</span>
+                        <span className="developmentTags">NodeJS</span>
+                        <span className="developmentTags">React</span>
+                        <span className="developmentTags">REST</span>
+                        <span className="developmentTags">Heroku</span>
+                        <span className="developmentTags">Git</span>
+                    </Wrap>
+                </VStack>
+                <VStack>
+                    <Heading size="md" mb="20px" display="flex" justifyContent="center">Certifications</Heading>
+                    <span className="certificationTags">AWS Certified Cloud Practitioner <Link _hover={{}} href="https://www.credly.com/badges/ad76621a-8d7c-4d45-a296-d308598e6cd9/public_url" pl="10px"><FontAwesomeIcon icon={faSquareArrowUpRight} style={{color: "#d121c9",}} /></Link></span>
+                </VStack>
+{/*                 
+                {isMobile ?
+                    (
+                        <Box p={4} mb="15px" textAlign="center" borderWidth="1px" borderRadius="5px" boxShadow="2px 2px 5px #B799FF">
+                            <Heading size="md" display="flex" justifyContent="center">Certifications</Heading>
+                            <br/>
+                            <SimpleGrid columns={{ base: 1, md: 1 }} spacing={4}>
+                                <Badge colorScheme="purple" borderRadius="5px">AWS Certified Cloud Practitioner</Badge>
+                                <Badge colorScheme="yellow" borderRadius="5px">AWS Certified Developer Associate</Badge>
+                            </SimpleGrid>
+                        </Box>
+                    ):(
+                        <Box p={4} mb="25px" width="50%" ml="25%" textAlign="center" borderWidth="1px" borderRadius="5px" boxShadow="2px 2px 5px #B799FF">
+                            <Heading size="md" display="flex" justifyContent="center">Certifications</Heading>
+                            <br/>
+                            <SimpleGrid columns={{ base: 1, md: 1 }} spacing={4}>
+                                <Badge colorScheme="purple" borderRadius="5px">AWS Certified Cloud Practitioner</Badge>
+                                <Badge colorScheme="yellow" borderRadius="5px">AWS Certified Developer Associate</Badge>
+                            </SimpleGrid>
+                        </Box>
+                    )
+                }
+
+                
                 <SimpleGrid columns={{ base: 1, md: 2 }} spacing={4} textAlign="center">
                     <Box p={4} borderWidth="1px" borderRadius="5px" boxShadow="2px 2px 5px #B799FF">
                         <Heading size="md" display="flex" justifyContent="center">Languages</Heading>
@@ -47,10 +96,9 @@ export const Skills = () => {
                             </SimpleGrid>
                     </Box>
                 </SimpleGrid>
-                <br/>
                 {isMobile ?
                     (
-                        <Box p={4} textAlign="center" borderWidth="1px" borderRadius="5px" boxShadow="2px 2px 5px #B799FF">
+                        <Box p={4} mt="15px" textAlign="center" borderWidth="1px" borderRadius="5px" boxShadow="2px 2px 5px #B799FF">
                             <Heading size="md" display="flex" justifyContent="center">Tools</Heading>
                             <br/>
                             <SimpleGrid columns={{ base: 3, md: 3 }} spacing={4}>
@@ -65,7 +113,7 @@ export const Skills = () => {
                             </SimpleGrid>
                         </Box>
                     ):(
-                        <Box p={4} width="50%" ml="25%" textAlign="center" borderWidth="1px" borderRadius="5px" boxShadow="2px 2px 5px #B799FF">
+                        <Box p={4} mt="25px" width="50%" ml="25%" textAlign="center" borderWidth="1px" borderRadius="5px" boxShadow="2px 2px 5px #B799FF">
                             <Heading size="md" display="flex" justifyContent="center">Tools</Heading>
                             <br/>
                             <SimpleGrid columns={{ base: 3, md: 3 }} spacing={4}>
@@ -80,7 +128,7 @@ export const Skills = () => {
                             </SimpleGrid>
                         </Box>
                     )
-                }
+                } */}
 
             </Flex>
 

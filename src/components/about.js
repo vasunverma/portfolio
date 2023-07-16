@@ -17,16 +17,15 @@ export const About = () => {
                     <br />
                     <Text textAlign="justify" justifyContent="center">
                     I have experience working with a variety of technologies, handling both backend and frontend development. 
-                    Currently, I am actively engaged in using React and Python. 
+                    Currently, I am actively engaged in prepartion for AWS Certified Solutions Architect Associate exam. 
                     My primary objective is to develop high-performing applications that effectively address real-world challenges and deliver an exceptional user experience.
                     </Text>
                     <br />
                     <Text textAlign="justify" justifyContent="center">
                     You can learn more about me by checking out my <Link _hover={{}} color='teal.500' href='https://www.linkedin.com/in/vasunverma/'>LinkedIn</Link> page, 
-                    exploring my <Link _hover={{}} color='teal.500' href='https://github.com/VasuNVerma/'>GitHub</Link> ,
+                    exploring my <Link _hover={{}} color='teal.500' href='https://github.com/VasuNVerma/'>GitHub</Link>,
                     or reviewing my <Link _hover={{}} color='teal.500' href='https://vasunverma.github.io/Vasu_Verma_Resume.pdf'>Resume</Link>.
-                    </Text>
-                        
+                    </Text>               
                 </Box>
             </Flex>
 

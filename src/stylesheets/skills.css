@@ -1,0 +1,23 @@
+.developmentTags{
+    display: inline-block;
+    margin-bottom: 5px;
+    text-align: center;
+    /* background-color: #8719B2; */
+    color: white;
+    border-color: #8719B2;
+    border-width: 2px;
+    padding: 5px 10px;
+    border-radius: 25px;
+    font-size: 2vh;
+}
+.certificationTags{
+    display: inline-block;
+    margin-bottom: 5px;
+    text-align: center;
+    color: white;
+    border-color: #8719B2;
+    border-width: 2px;
+    padding: 5px 10px;
+    border-radius: 25px;
+    font-size: 2vh;
+}

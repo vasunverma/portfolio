@@ -20,27 +20,28 @@ export const Navbar = () => {
     }, []);
 
     return (
-        <Flex
-        p="10px"
-        alignItems="center"
-        justifyContent="center"
-        margin="auto"
-        maxWidth="800px"
-        position="sticky"
-        pt="30px"
-        backgroundColor="#202023"
-        top="0"
-        zIndex="1">
-            <HStack spacing="10px">
-                <ScrollLink style={{ cursor: 'pointer' }} to="home" spy={true} smooth={true} offset={-90} duration={500}><Heading size='md'>vasuv._</Heading></ScrollLink>
-            </HStack>
-            <Spacer />
-            {isMobile ? (
-                <>  
+            isMobile ? (
+                <Flex
+                    p="10px"
+                    alignItems="center"
+                    justifyContent="center"
+                    margin="auto"
+                    maxWidth="800px"
+                    position="sticky"
+                    pt="30px"
+                    backgroundColor="#202023"
+                    top="0"
+                    zIndex="1"
+                    opacity="0.9">
+
+                    <HStack spacing="10px">
+                        <ScrollLink style={{ cursor: 'pointer' }} to="home" spy={true} smooth={true} offset={-90} duration={500}><Heading size='md'>vasuv._</Heading></ScrollLink>
+                    </HStack>
+                    <Spacer />
                     <Button variant="ghost" color="#f0e7db" onClick={onOpen} aria-label="Menu"><HamburgerIcon/></Button>
                     <Drawer placement="right" onClose={onClose} isOpen={isOpen}>
                         <DrawerOverlay >
-                            <DrawerContent backgroundColor="#202023" color="#f0e7db">
+                            <DrawerContent opacity="0.9" backgroundColor="#202023" color="#f0e7db">
                                 <DrawerHeader>
                                     <HStack>
                                         <Text>Menu</Text>
@@ -64,15 +65,32 @@ export const Navbar = () => {
                             </DrawerContent>
                         </DrawerOverlay>
                     </Drawer>
-                </>
+                </Flex>
             ) : (
-            <HStack spacing="20px">
-                <ScrollLink style={{ cursor: "pointer" }} to="about" spy={true} smooth={true} offset={-30} duration={500}>About</ScrollLink>
-                <ScrollLink style={{ cursor: "pointer" }} to="experience" spy={true} smooth={true} offset={-20} duration={500}>Experience</ScrollLink>
-                <ScrollLink style={{ cursor: "pointer" }} to="projects" spy={true} smooth={true} offset={-20} duration={500}>Projects</ScrollLink>
-                <ScrollLink style={{ cursor: "pointer" }} to="contact" spy={true} smooth={true} offset={-30} duration={1000}>Contact</ScrollLink>
-            </HStack>
-      )}
-    </Flex>
+            <Flex
+                p="10px"
+                alignItems="center"
+                justifyContent="center"
+                margin="auto"
+                maxWidth="800px"
+                position="sticky"
+                pt="30px"
+                backgroundColor="#202023"
+                top="0"
+                zIndex="1"
+                opacity="0.9">
+                <HStack spacing="10px">
+                    <ScrollLink style={{ cursor: 'pointer' }} to="home" spy={true} smooth={true} offset={-90} duration={500}><Heading size='md'>vasuv._</Heading></ScrollLink>
+                </HStack>
+                <Spacer />   
+                <HStack spacing="20px">
+                    <ScrollLink style={{ cursor: "pointer" }} to="about" spy={true} smooth={true} offset={-30} duration={500}>About</ScrollLink>
+                    <ScrollLink style={{ cursor: "pointer" }} to="experience" spy={true} smooth={true} offset={-20} duration={500}>Experience</ScrollLink>
+                    <ScrollLink style={{ cursor: "pointer" }} to="projects" spy={true} smooth={true} offset={-20} duration={500}>Projects</ScrollLink>
+                    <ScrollLink style={{ cursor: "pointer" }} to="contact" spy={true} smooth={true} offset={-30} duration={1000}>Contact</ScrollLink>
+                </HStack>
+            </Flex>
+      )
+    
   );
 };

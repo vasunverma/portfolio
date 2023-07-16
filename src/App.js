@@ -8,6 +8,7 @@ import { Experience } from './components/experience';
 import { Skills } from './components/skills';
 import { LoadingScreen } from './components/loading';
 import { ScrollToTopButton } from './components/scrollToTop';
+import { BackgroundAnimation } from './components/background';
 import { useEffect, useState } from 'react';
 
 function App() {
@@ -17,7 +18,7 @@ function App() {
   useEffect(() => {
     setTimeout(() => {
       setLoading(false);
-    }, 1500);
+    }, 2500);
   }, []);
 
 
