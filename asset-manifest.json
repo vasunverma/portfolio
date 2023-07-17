@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/static/css/main.12dd7ed3.css",
-    "main.js": "/static/js/main.1fc2c4eb.js",
-    "static/media/Portrait.png": "/static/media/Portrait.7a3952b0428b4dad6143.png",
+    "main.css": "/static/css/main.7fe3b171.css",
+    "main.js": "/static/js/main.f2b934aa.js",
+    "static/media/Portrait.png": "/static/media/Portrait.246c810bd9e4f271ffbe.png",
     "static/media/SmartAirPurifierProject.jpg": "/static/media/SmartAirPurifierProject.4044c192dc80f1c09e83.jpg",
     "static/media/Oyo.png": "/static/media/Oyo.cabda9c8a44d62e9efd1.png",
     "static/media/AudioBidProject.png": "/static/media/AudioBidProject.1ca8151e9094f9778b22.png",
     "static/media/BinaryClassificationProject.png": "/static/media/BinaryClassificationProject.13370583e1bf5cbcb985.png",
     "index.html": "/index.html",
-    "main.12dd7ed3.css.map": "/static/css/main.12dd7ed3.css.map",
-    "main.1fc2c4eb.js.map": "/static/js/main.1fc2c4eb.js.map"
+    "main.7fe3b171.css.map": "/static/css/main.7fe3b171.css.map",
+    "main.f2b934aa.js.map": "/static/js/main.f2b934aa.js.map"
   },
   "entrypoints": [
-    "static/css/main.12dd7ed3.css",
-    "static/js/main.1fc2c4eb.js"
+    "static/css/main.7fe3b171.css",
+    "static/js/main.f2b934aa.js"
   ]
 }
