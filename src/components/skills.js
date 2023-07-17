@@ -1,21 +1,21 @@
-import { Flex, Badge, Link, Box, Wrap, Heading, SimpleGrid, VStack, HStack } from "@chakra-ui/react";
+import { Flex, Wrap, Heading, VStack} from "@chakra-ui/react";
 import { useState, useEffect } from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {  faSquareArrowUpRight } from '@fortawesome/free-solid-svg-icons'
 import "../stylesheets/skills.css";
 
 export const Skills = () => {
-    const [isMobile, setIsMobile] = useState(false);
+    // const [isMobile, setIsMobile] = useState(false);
 
     // Toggle isMobile based on window width
-    const handleResize = () => {
-      setIsMobile(window.innerWidth <= 768);
-    };
+    // const handleResize = () => {
+    //   setIsMobile(window.innerWidth <= 768);
+    // };
   
-    useEffect(() => {
-      window.addEventListener("resize", handleResize);
-      handleResize();
-    }, []);
+    // useEffect(() => {
+    //   window.addEventListener("resize", handleResize);
+    //   handleResize();
+    // }, []);
 
     return(
             <Flex p="10px" alignItems="left" 
@@ -48,95 +48,6 @@ export const Skills = () => {
                     </a>
                     </span>
                 </VStack>
-{/*                 
-                {isMobile ?
-                    (
-                        <Box p={4} mb="15px" textAlign="center" borderWidth="1px" borderRadius="5px" boxShadow="2px 2px 5px #B799FF">
-                            <Heading size="md" display="flex" justifyContent="center">Certifications</Heading>
-                            <br/>
-                            <SimpleGrid columns={{ base: 1, md: 1 }} spacing={4}>
-                                <Badge colorScheme="purple" borderRadius="5px">AWS Certified Cloud Practitioner</Badge>
-                                <Badge colorScheme="yellow" borderRadius="5px">AWS Certified Developer Associate</Badge>
-                            </SimpleGrid>
-                        </Box>
-                    ):(
-                        <Box p={4} mb="25px" width="50%" ml="25%" textAlign="center" borderWidth="1px" borderRadius="5px" boxShadow="2px 2px 5px #B799FF">
-                            <Heading size="md" display="flex" justifyContent="center">Certifications</Heading>
-                            <br/>
-                            <SimpleGrid columns={{ base: 1, md: 1 }} spacing={4}>
-                                <Badge colorScheme="purple" borderRadius="5px">AWS Certified Cloud Practitioner</Badge>
-                                <Badge colorScheme="yellow" borderRadius="5px">AWS Certified Developer Associate</Badge>
-                            </SimpleGrid>
-                        </Box>
-                    )
-                }
-
-                
-                <SimpleGrid columns={{ base: 1, md: 2 }} spacing={4} textAlign="center">
-                    <Box p={4} borderWidth="1px" borderRadius="5px" boxShadow="2px 2px 5px #B799FF">
-                        <Heading size="md" display="flex" justifyContent="center">Languages</Heading>
-                        <Box>
-                            <br/>
-                            <SimpleGrid columns={{ base: 3, md: 3 }} spacing={4}>
-                            <Badge colorScheme="teal" borderRadius="5px">C++</Badge>
-                            <Badge colorScheme="pink" borderRadius="5px">JAVA</Badge>
-                            <Badge colorScheme="yellow" borderRadius="5px">Python</Badge>
-                            <Badge colorScheme="purple" borderRadius="5px">JavaScript</Badge>
-                            <Badge colorScheme="orange" borderRadius="5px">HTML/CSS</Badge>
-                            <Badge colorScheme="blue" borderRadius="5px">SQL</Badge>
-                            <Badge colorScheme="red" borderRadius="5px">Ruby</Badge>
-                            </SimpleGrid>
-                        </Box>
-                    </Box>
-                    <Box p={4} borderWidth="1px" borderRadius="5px" boxShadow="2px 2px 5px #B799FF">
-                        <Heading size="md" display="flex" justifyContent="center">Frameworks</Heading>
-                        <br/>
-                            <SimpleGrid columns={{ base: 3, md: 3 }} spacing={4}>
-                                <Badge colorScheme="yellow" borderRadius="5px">React.js</Badge>
-                                <Badge colorScheme="orange" borderRadius="5px">Django</Badge>
-                                <Badge colorScheme="blue" borderRadius="5px">Rails</Badge>
-                                <Badge colorScheme="red" borderRadius="5px">Node.js</Badge>
-                                <Badge colorScheme="teal" borderRadius="5px">REST</Badge>
-                            </SimpleGrid>
-                    </Box>
-                </SimpleGrid>
-                {isMobile ?
-                    (
-                        <Box p={4} mt="15px" textAlign="center" borderWidth="1px" borderRadius="5px" boxShadow="2px 2px 5px #B799FF">
-                            <Heading size="md" display="flex" justifyContent="center">Tools</Heading>
-                            <br/>
-                            <SimpleGrid columns={{ base: 3, md: 3 }} spacing={4}>
-                                <Badge colorScheme="purple" borderRadius="5px">EC2</Badge>
-                                <Badge colorScheme="yellow" borderRadius="5px">Lambda</Badge>
-                                <Badge colorScheme="teal" borderRadius="5px">S3</Badge>
-                                <Badge colorScheme="red" borderRadius="5px">SES</Badge>
-                                <Badge colorScheme="blue" borderRadius="5px">Git</Badge>
-                                <Badge colorScheme="orange" borderRadius="5px">Docker</Badge>
-                                <Badge colorScheme="green" borderRadius="5px">Maven</Badge>
-                                <Badge colorScheme="pink" borderRadius="5px">Heroku</Badge>
-                            </SimpleGrid>
-                        </Box>
-                    ):(
-                        <Box p={4} mt="25px" width="50%" ml="25%" textAlign="center" borderWidth="1px" borderRadius="5px" boxShadow="2px 2px 5px #B799FF">
-                            <Heading size="md" display="flex" justifyContent="center">Tools</Heading>
-                            <br/>
-                            <SimpleGrid columns={{ base: 3, md: 3 }} spacing={4}>
-                                <Badge colorScheme="purple" borderRadius="5px">EC2</Badge>
-                                <Badge colorScheme="yellow" borderRadius="5px">Lambda</Badge>
-                                <Badge colorScheme="teal" borderRadius="5px">S3</Badge>
-                                <Badge colorScheme="red" borderRadius="5px">SES</Badge>
-                                <Badge colorScheme="blue" borderRadius="5px">Git</Badge>
-                                <Badge colorScheme="orange" borderRadius="5px">Docker</Badge>
-                                <Badge colorScheme="green" borderRadius="5px">Maven</Badge>
-                                <Badge colorScheme="pink" borderRadius="5px">Heroku</Badge>
-                            </SimpleGrid>
-                        </Box>
-                    )
-                } */}
-
             </Flex>
-
-
-       
     );
 }
