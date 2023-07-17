@@ -8,6 +8,8 @@ const projectData = [
       githubLink: "https://github.com/vasunverma/binary-classification-high-dim-data",
       tags: ["Python", "Django", "JavaScript", "S3", "PostgreSQL", "SES", "OAuth", "HTML/CSS", "Heroku"],
       tagColor: ["blue", "red", "yellow", "orange", "teal", "green", "purple", "pink", "red"],
+      rowSpan: 1,
+      columnSpan: 2,
     },
     {
       id: 2,
@@ -17,6 +19,8 @@ const projectData = [
       githubLink: "https://github.com/vasunverma/binary-classification-high-dim-data",
       tags: ["R", "XgBoost", "Baruta", "Tensorflow", "PCA", "Keras", "RandomForest", "Caret"],
       tagColor: ["blue", "red", "yellow", "orange", "teal", "green", "purple", "pink"],
+      rowSpan: 1,
+      columnSpan: 2,
     },
     {
       id: 3,
@@ -26,16 +30,31 @@ const projectData = [
       githubLink: "https://github.com/vasunverma/binary-classification-high-dim-data",
       tags: ["C++", "Arduino", "AWS IoT", "JavaScript", "HTML/CSS", "P5.js", "MQTT"],
       tagColor: ["blue", "red", "yellow", "orange", "teal", "green", "purple"],
+      rowSpan: 1,
+      columnSpan: 2,
     },
     {
         id: 4,
         title: "Timer App",
-        description: "A simple timer app made using Electron.js",
-        image: require("../assets/SmartAirPurifierProject.jpg"),
-        githubLink: "https://github.com/vasunverma/binary-classification-high-dim-data",
+        description: "Timer App is a sleek and user-friendly desktop application developed with Electron.js, providing a seamless and customizable timer experience for various purposes.",
+        // image: require("../assets/SmartAirPurifierProject.jpg"),
+        githubLink: "https://github.com/vasunverma/Timer-App",
         tags: ["Electron", "Javascript", "HTML", "CSS"],
         tagColor: ["orange", "teal", "green", "purple"],
-      },
+        rowSpan: 1,
+        columnSpan: 1,
+    },
+    {
+        id: 5,
+        title: "URL Shortener",
+        description: "URL Shortener is a web application developed using Flask, HTML, and CSS. It enables users to shorten long URLs and provides a convenient way to share them.",
+        // image: require("../assets/SmartAirPurifierProject.jpg"),
+        githubLink: "https://github.com/vasunverma/URL-Shortner",
+        tags: ["Flask", "Python", "Javascript", "HTML", "CSS"],
+        tagColor: ["blue", "red", "yellow", "orange", "teal"],
+        rowSpan: 1,
+        columnSpan: 1,
+    }
   ];
   
   export default projectData;

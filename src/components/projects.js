@@ -1,5 +1,10 @@
 import React, { useEffect, useState } from "react";
-import { Flex, Heading, SimpleGrid } from "@chakra-ui/react";
+import {
+  Flex,
+  Heading,
+  Grid,
+  GridItem,
+} from "@chakra-ui/react";
 import ProjectCard from "./projectCard";
 import projectData from "./projectData";
 
@@ -20,16 +25,30 @@ export const Projects = () => {
   }, []);
 
   return (
-    <Flex p="10px" alignItems="left" justifyContent="center" margin="auto" direction="column" id="projects" maxWidth="800px">
+    <Flex
+      p="10px"
+      alignItems="left"
+      justifyContent="center"
+      margin="auto"
+      direction="column"
+      id="projects"
+      maxWidth="800px"
+    >
       <Heading p="20px 20px 20px 0px" justifyContent="center" display="flex">
         Things I've Built
       </Heading>
 
-      <SimpleGrid columns={{ base: 1, md: 1 }} spacing="20px">
+      <Grid
+        templateRows='repeat(1, 1fr)'
+        templateColumns='repeat(2, 1fr)'
+        gap="20px"
+      >
         {projectData.map((project) => (
-          <ProjectCard key={project.id} project={project} isMobile={isMobile} />
+          <GridItem rowSpan={isMobile ? 1 : project.rowSpan} colSpan={isMobile ? 2 : project.columnSpan} key={project.id}>
+            <ProjectCard project={project} isMobile={isMobile} />
+          </GridItem>
         ))}
-      </SimpleGrid>
+      </Grid>
     </Flex>
   );
 };

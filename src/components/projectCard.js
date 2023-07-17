@@ -28,7 +28,14 @@ const ProjectCard = ({ project, isMobile }) => {
     }
   };
 
-  const showRead = (text) => {
+  const showReadDesktop = (text) => {
+    if (text.length > 170) {
+      return true;
+    }
+    return false;
+  }
+
+  const showReadMobile = (text) => {
     if (text.length > 150) {
       return true;
     }
@@ -40,33 +47,9 @@ const ProjectCard = ({ project, isMobile }) => {
     <CardBody>
       {isMobile ? (
         <VStack>
-          <Image w="300px" h="200px" mb="20px" src={project.image} alt={project.title} borderRadius="lg" />
-          <Stack mt="6" spacing="3" color="#f0e7db">
-            <Heading size="md">
-              {project.title}
-              <Link href={project.demoLink} target="_blank" rel="noreferrer" style={{ marginLeft: "10px" }}>
-                <FontAwesomeIcon icon={faSquareArrowUpRight} style={{ color: "#d121c9" }} />
-              </Link>
-              <Link href={project.githubLink} target="_blank" rel="noreferrer" style={{ marginLeft: "10px" }}>
-                <FontAwesomeIcon icon={faGithub} style={{ color: "#d121c9" }} />
-              </Link>
-            </Heading>
-            <Text>
-              {renderTextContent(project.description, 100)}
-            </Text>
-            <Link onClick={toggleShowFullText} cursor="pointer" color="#d121c9">
-                {showRead(project.description) ? (showFullText ? "Read less" : "Read more") : null}
-            </Link>
-            <Box>
-                {project.tags.map((tag, index) => (
-                <Code key={tag} className="projectDevelopmentTags" colorScheme={project.tagColor[index]} children={tag} />
-              ))}
-            </Box>
-          </Stack>
-        </VStack>
-      ) : (
-        <Stack direction="row" align="flex-start">
-          <Image w="300px" h="220px" mr="20px" src={project.image} alt={project.title} borderRadius="lg" />
+          {project.image ? 
+          <Image w="300px" h="220px" mr="20px" mb="20px" src={project.image} alt={project.title} borderRadius="lg" />
+          : null}
           <Stack mt="6" spacing="3" color="#f0e7db">
             <Heading size="md">
               {project.title}
@@ -80,10 +63,40 @@ const ProjectCard = ({ project, isMobile }) => {
               </Link>
             </Heading>
             <Text>
-              {renderTextContent(project.description, 150)}
+              {renderTextContent(project.description, 100)}
             </Text>
             <Link onClick={toggleShowFullText} cursor="pointer" color="#d121c9">
-              {showRead(project.description) ? (showFullText ? "Read less" : "Read more") : null}
+                {showReadMobile(project.description) ? (showFullText ? "Read less" : "Read more") : null}
+            </Link>
+            <Box>
+                {project.tags.map((tag, index) => (
+                <Code key={tag} className="projectDevelopmentTags" colorScheme={project.tagColor[index]} children={tag} />
+              ))}
+            </Box>
+          </Stack>
+        </VStack>
+      ) : (
+        <Stack direction="row" align="flex-start">
+          {project.image ? 
+          <Image w="300px" h="220px" mr="20px" src={project.image} alt={project.title} borderRadius="lg" />
+          : null}
+          <Stack mt="6" spacing="3" color="#f0e7db">
+            <Heading size="md">
+              {project.title}
+              {project.demoLink ? 
+              <Link href={project.demoLink} target="_blank" rel="noreferrer" style={{ marginLeft: "10px" }}>
+                <FontAwesomeIcon icon={faSquareArrowUpRight} style={{ color: "#d121c9" }} />
+              </Link>
+                : null}
+              <Link href={project.githubLink} target="_blank" rel="noreferrer" style={{ marginLeft: "10px" }}>
+                <FontAwesomeIcon icon={faGithub} style={{ color: "#d121c9" }} />
+              </Link>
+            </Heading>
+            <Text>
+              {renderTextContent(project.description, 170)}
+            </Text>
+            <Link onClick={toggleShowFullText} cursor="pointer" color="#d121c9">
+              {showReadDesktop(project.description) ? (showFullText ? "Read less" : "Read more") : null}
             </Link>
             <Box>
               {project.tags.map((tag, index) => (
