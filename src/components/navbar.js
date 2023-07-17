@@ -53,13 +53,15 @@ export const Navbar = () => {
                                 </DrawerHeader>
                                 <DrawerBody>
                                     <Flex direction="column">
-                                        <ScrollLink style={{ cursor: "pointer" }} to="about" spy={true} smooth={true} offset={-30} duration={500} onClick={onClose}>About</ScrollLink>
+                                        <ScrollLink style={{ cursor: "pointer" }} to="about" spy={true} smooth={true} offset={-50} duration={500} onClick={onClose}>About</ScrollLink>
                                         <br/>
-                                        <ScrollLink style={{ cursor: "pointer" }} to="experience" spy={true} smooth={true} offset={-20} duration={500} onClick={onClose}>Experience</ScrollLink>
+                                        <ScrollLink style={{ cursor: "pointer" }} to="skills" spy={true} smooth={true} offset={-50} duration={500} onClick={onClose}>Skills</ScrollLink>
                                         <br/>
-                                        <ScrollLink style={{ cursor: "pointer" }} to="projects" spy={true} smooth={true} offset={-20} duration={500} onClick={onClose}>Projects</ScrollLink>
+                                        <ScrollLink style={{ cursor: "pointer" }} to="experience" spy={true} smooth={true} offset={-50} duration={500} onClick={onClose}>Experience</ScrollLink>
                                         <br/>
-                                        <ScrollLink style={{ cursor: "pointer" }} to="contact" spy={true} smooth={true} offset={-30} duration={1000} onClick={onClose}>Contact</ScrollLink>
+                                        <ScrollLink style={{ cursor: "pointer" }} to="projects" spy={true} smooth={true} offset={-50} duration={500} onClick={onClose}>Projects</ScrollLink>
+                                        <br/>
+                                        <ScrollLink style={{ cursor: "pointer" }} to="contact" spy={true} smooth={true} offset={-50} duration={1000} onClick={onClose}>Contact</ScrollLink>
                                     </Flex>
                                 </DrawerBody>
                             </DrawerContent>
@@ -85,12 +87,12 @@ export const Navbar = () => {
                 <Spacer />   
                 <HStack spacing="20px">
                     <ScrollLink style={{ cursor: "pointer" }} to="about" spy={true} smooth={true} offset={-30} duration={500}>About</ScrollLink>
-                    <ScrollLink style={{ cursor: "pointer" }} to="experience" spy={true} smooth={true} offset={-20} duration={500}>Experience</ScrollLink>
-                    <ScrollLink style={{ cursor: "pointer" }} to="projects" spy={true} smooth={true} offset={-20} duration={500}>Projects</ScrollLink>
+                    <ScrollLink style={{ cursor: "pointer" }} to="skills" spy={true} smooth={true} offset={-30} duration={500}>Skills</ScrollLink>
+                    <ScrollLink style={{ cursor: "pointer" }} to="experience" spy={true} smooth={true} offset={-30} duration={500}>Experience</ScrollLink>
+                    <ScrollLink style={{ cursor: "pointer" }} to="projects" spy={true} smooth={true} offset={-30} duration={500}>Projects</ScrollLink>
                     <ScrollLink style={{ cursor: "pointer" }} to="contact" spy={true} smooth={true} offset={-30} duration={1000}>Contact</ScrollLink>
                 </HStack>
             </Flex>
       )
-    
   );
 };

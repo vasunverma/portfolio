@@ -1,6 +1,6 @@
 import { Flex, Heading, Text, Code, Spacer, HStack, 
          Accordion, Image, AccordionButton, AccordionPanel, 
-         AccordionItem, AccordionIcon, Box, Icon, VStack, Link } from "@chakra-ui/react";
+         AccordionItem, AccordionIcon, Box, Icon, VStack } from "@chakra-ui/react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {  faLocationDot, faSquareArrowUpRight } from '@fortawesome/free-solid-svg-icons'
 import AmdocsLogo from "../assets/Amdocs.jpg";
@@ -24,22 +24,11 @@ export const Experience = () => {
         <Flex p="10px" alignItems="left" 
         justifyContent="center" margin="auto" 
         direction="column" id="experience" maxWidth="800px">
-            {/* <Divider p="10px"/> */}
-            <Heading p="20px 20px 20px 0px" justifyContent="center" display="flex">Where I’ve Worked</Heading>
-            {/* <Accordion allowToggle>
-                <AccordionItem mb={4} border="none" >
-                    <AccordionButton  _hover={{}} backgroundColor="#740cdc" borderRadius="10px">
-                        <Box><Text fontSize="10px"> Software Engineer @ Amdocs </Text></Box>
-                        <Spacer />  
-                        <Box><Text fontSize="10px">2020 - 2022</Text></Box>
-                        <Box>   <Icon as={AccordionIcon} /></Box>
-                    </AccordionButton>
-                    <AccordionPanel mt="20px" p={4} backgroundColor="#241d41" borderRadius="10px"> */}
+            <Heading p="20px 20px 20px 0px" justifyContent="center" display="flex">Where I've Worked</Heading>
                     <Accordion allowToggle>
                     {isMobile ?
                         (   
                             <>
-                                
                                     <AccordionItem mb={4} border="none" >
                                         <AccordionButton  _hover={{}} backgroundColor="#740cdc" borderRadius="10px">
                                             <Box><Text fontSize="12px"> Software Engineer @ Amdocs </Text></Box>
@@ -59,14 +48,16 @@ export const Experience = () => {
                                                             <FontAwesomeIcon icon={faLocationDot} style={{color: "#d121c9",}} />
                                                                 <Text>Gurgaon, India</Text>
                                                                 <div/>
-                                                                <Link href="https://www.amdocs.com"><FontAwesomeIcon icon={faSquareArrowUpRight} style={{color: "#d121c9",}} /> amdocs.com</Link>
+                                                                <a href="https://www.amdocs.com" target="_blank" rel="noreferrer">
+                                                                    <FontAwesomeIcon icon={faSquareArrowUpRight} style={{color: "#d121c9"}} /> amdocs.com
+                                                                </a>
                                                             </HStack>
                                                         </Box>
                                                         <Spacer />
                                                         <Box>
-                                                            As part of the CRM Dev team, my role included developing User interfaces and back-end logic, 
-                                                            creating APIs , third party integration with existing client services, Database schema designing, 
-                                                            client data-gathering and its implementation for future iterations.
+                                                            In my role as a member of the CRM Dev team, my responsibilities encompassed various tasks. These included developing user interfaces and back-end logic, 
+                                                            designing and implementing APIs, overseeing team members, integrating third-party services with existing client systems, designing database schemas, and 
+                                                            gathering client data for future iterations.
                                                         </Box>
                                                         <Spacer />
                                                         <Box w="100%">
@@ -101,14 +92,16 @@ export const Experience = () => {
                                             <FontAwesomeIcon icon={faLocationDot} style={{color: "#9827a5",}} />
                                                 <Text>Gurgaon, India</Text>
                                                 <div/>
-                                                <Link href="https://www.amdocs.com"><FontAwesomeIcon icon={faSquareArrowUpRight} style={{color: "#d121c9",}} /> amdocs.com</Link>
+                                                <a href="https://www.amdocs.com" target="_blank" rel="noreferrer">
+                                                    <FontAwesomeIcon icon={faSquareArrowUpRight} style={{color: "#d121c9"}} /> amdocs.com
+                                                </a>
                                             </HStack>
                                         </Box>
                                         <Spacer />
                                         <Box>
-                                            As part of the CRM Dev team, my role included developing User interfaces and back-end logic, 
-                                            creating APIs , third party integration with existing client services, Database schema designing, 
-                                            client data-gathering and its implementation for future iterations.
+                                            In my role as a member of the CRM Dev team, my responsibilities encompassed various tasks. These included developing user interfaces and back-end logic, 
+                                            designing and implementing APIs, overseeing team members, integrating third-party services with existing client systems, designing database schemas, and 
+                                            gathering client data for future iterations.
                                         </Box>
                                         <Spacer />
                                         <Box w="100%">
@@ -131,9 +124,6 @@ export const Experience = () => {
                             </AccordionItem>
                             </>
                         )}
-                        
-
-
                     {isMobile ? 
                         (   
                             <>
@@ -156,14 +146,16 @@ export const Experience = () => {
                                             <FontAwesomeIcon icon={faLocationDot} style={{color: "#9827a5",}} />
                                                 <Text>Gurgaon, India</Text>
                                                 <div/>
-                                                <Link href="https://www.oyorooms.com/"><FontAwesomeIcon icon={faSquareArrowUpRight} style={{color: "#d121c9",}} /> oyorooms.com</Link>
+                                                <a href="https://www.oyorooms.com/" target="_blank" rel="noreferrer">
+                                                    <FontAwesomeIcon icon={faSquareArrowUpRight} style={{color: "#d121c9"}} /> oyorooms.com
+                                                </a>
                                             </HStack>
                                         </Box>
                                         <Spacer />
                                         <Box>
-                                            I worked on Invoice and Finance Dev team and my role included developing APIs for internal usage, 
-                                            automating manual task of feeding invoice data into system 
-                                            and create new templates for invoices as the company expanded to new regions.
+                                            As a member of the Invoice and Finance Dev team, my primary responsibilities involved working on various aspects of the team's projects. This included 
+                                            developing APIs for internal use, transitioning the invoice microservice from Rails to Spring Boot, automating the manual task of inputting invoice data 
+                                            into the system, and creating new invoice templates to accommodate the company's expansion into new regions.
                                         </Box>
                                         <Spacer />
                                         <Box w="100%">
@@ -198,14 +190,16 @@ export const Experience = () => {
                                             <FontAwesomeIcon icon={faLocationDot} style={{color: "#9827a5",}} />
                                                 <Text>Gurgaon, India</Text>
                                                 <div/>
-                                                <Link href="https://www.oyorooms.com/"><FontAwesomeIcon icon={faSquareArrowUpRight} style={{color: "#d121c9",}} /> oyorooms.com</Link>
+                                                <a href="https://www.oyorooms.com/" target="_blank" rel="noreferrer">
+                                                    <FontAwesomeIcon icon={faSquareArrowUpRight} style={{color: "#d121c9"}} /> oyorooms.com
+                                                </a>
                                             </HStack>
                                         </Box>
                                         <Spacer />
                                         <Box>
-                                            I worked on Invoice and Finance Dev team and my role included developing APIs for internal usage, 
-                                            automating manual task of feeding invoice data into system 
-                                            and create new templates for invoices as the company expanded to new regions.
+                                        As a member of the Invoice and Finance Dev team, my primary responsibilities involved working on various aspects of the team's projects. This included 
+                                        developing APIs for internal use, transitioning the invoice microservice from Rails to Spring Boot, automating the manual task of inputting invoice data 
+                                        into the system, and creating new invoice templates to accommodate the company's expansion into new regions.
                                         </Box>
                                         <Spacer />
                                         <Box w="100%">
@@ -229,9 +223,7 @@ export const Experience = () => {
                 </>
                         )}
 
-
             </Accordion>
         </Flex>
-        
     );
 };

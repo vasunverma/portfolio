@@ -1,4 +1,4 @@
-import { Flex, Text, Box, Link, Heading} from "@chakra-ui/react";
+import { Flex, Text, Box, Heading} from "@chakra-ui/react";
 
 
 export const About = () => {
@@ -22,14 +22,14 @@ export const About = () => {
                     </Text>
                     <br />
                     <Text textAlign="justify" justifyContent="center">
-                    You can learn more about me by checking out my <Link _hover={{}} color='teal.500' href='https://www.linkedin.com/in/vasunverma/'>LinkedIn</Link> page, 
-                    exploring my <Link _hover={{}} color='teal.500' href='https://github.com/VasuNVerma/'>GitHub</Link>,
-                    or reviewing my <Link _hover={{}} color='teal.500' href='https://vasunverma.github.io/Vasu_Verma_Resume.pdf'>Resume</Link>.
+                    You can learn more about me by checking out my <a style={{color: "#009688"}} href="https://www.linkedin.com/in/vasunverma/" target="_blank" rel="noreferrer">
+                    LinkedIn</a> page, 
+                    exploring my <a style={{color: "#009688"}} href="https://github.com/vasunverma" target="_blank" rel="noreferrer">
+                    Github</a>,
+                    or reviewing my <a style={{color: "#009688"}} href="https://vasunverma.github.io/Vasu_Verma_Resume.pdf" target="_blank" rel="noreferrer">
+                    Resume</a>.
                     </Text>               
                 </Box>
             </Flex>
-
-
-       
     );
 }
