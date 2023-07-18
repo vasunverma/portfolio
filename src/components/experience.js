@@ -129,9 +129,9 @@ export const Experience = () => {
                             <>
                     <AccordionItem mb={4} border="none" >
                     <AccordionButton  _hover={{}} backgroundColor="#740cdc" borderRadius="10px">
-                        <Box><Text fontSize="12px"> Software Engineer Intern @ OYO Rooms </Text></Box>
+                        <Box><Text fontSize="11px"> Software Engineer Intern @ OYO Rooms </Text></Box>
                         <Spacer />  
-                        <Box><Text fontSize="12px">2020 - 2020</Text></Box>
+                        <Box><Text fontSize="11px">2020 - 2020</Text></Box>
                         <Box display="flex"><Icon as={AccordionIcon} /></Box>
                     </AccordionButton>
                     <AccordionPanel mt="20px" p={4} backgroundColor="#241d41" borderRadius="10px">

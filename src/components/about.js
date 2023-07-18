@@ -1,4 +1,7 @@
 import { Flex, Text, Box, Heading} from "@chakra-ui/react";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faSquareArrowUpRight, faDownload } from '@fortawesome/free-solid-svg-icons';
+import { faGithub } from '@fortawesome/free-brands-svg-icons';
 
 
 export const About = () => {
@@ -22,12 +25,12 @@ export const About = () => {
                     </Text>
                     <br />
                     <Text textAlign="justify" justifyContent="center">
-                    You can learn more about me by checking out my <a style={{color: "#009688"}} href="https://www.linkedin.com/in/vasunverma/" target="_blank" rel="noreferrer">
-                    LinkedIn</a> page, 
-                    exploring my <a style={{color: "#009688"}} href="https://github.com/vasunverma" target="_blank" rel="noreferrer">
-                    Github</a>,
-                    or reviewing my <a style={{color: "#009688"}} href="https://vasunverma.github.io/Vasu_Verma_Resume.pdf" target="_blank" rel="noreferrer">
-                    Resume</a>.
+                    You can learn more about me by checking out my <a style={{color: "#d121c9"}} href="https://www.linkedin.com/in/vasunverma/" target="_blank" rel="noreferrer">
+                    LinkedIn <FontAwesomeIcon icon={faSquareArrowUpRight} style={{ color: "#d121c9" }} /></a> page, 
+                    exploring my <a style={{color: "#d121c9"}} href="https://github.com/vasunverma" target="_blank" rel="noreferrer">
+                    Github <FontAwesomeIcon icon={faGithub} style={{ color: "#d121c9" }} /></a>,
+                    or reviewing my <a style={{color: "#d121c9"}} href="https://vasunverma.github.io/Vasu_Verma_Resume.pdf" target="_blank" rel="noreferrer">
+                    Resume <FontAwesomeIcon icon={faDownload} style={{color: "#d121c9",}} /></a>
                     </Text>               
                 </Box>
             </Flex>
