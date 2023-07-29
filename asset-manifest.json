@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.984b19f1.css",
-    "main.js": "/static/js/main.66539684.js",
+    "main.js": "/static/js/main.5384ad15.js",
     "static/media/Portrait.png": "/static/media/Portrait.a2cf7a1096fae3884b37.png",
     "static/media/SmartAirPurifierProject.jpg": "/static/media/SmartAirPurifierProject.4044c192dc80f1c09e83.jpg",
     "static/media/Oyo.png": "/static/media/Oyo.cabda9c8a44d62e9efd1.png",
@@ -9,10 +9,10 @@
     "static/media/BinaryClassificationProject.png": "/static/media/BinaryClassificationProject.13370583e1bf5cbcb985.png",
     "index.html": "/index.html",
     "main.984b19f1.css.map": "/static/css/main.984b19f1.css.map",
-    "main.66539684.js.map": "/static/js/main.66539684.js.map"
+    "main.5384ad15.js.map": "/static/js/main.5384ad15.js.map"
   },
   "entrypoints": [
     "static/css/main.984b19f1.css",
-    "static/js/main.66539684.js"
+    "static/js/main.5384ad15.js"
   ]
 }
