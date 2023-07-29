@@ -25,7 +25,7 @@ export const Experience = () => {
         justifyContent="center" margin="auto" 
         direction="column" id="experience" maxWidth="800px">
             <Heading p="20px 20px 20px 0px" justifyContent="center" display="flex">Where I've Worked</Heading>
-                    <Accordion allowToggle>
+                    <Accordion allowToggle defaultIndex={[0, 1]}>
                     {isMobile ?
                         (   
                             <>
