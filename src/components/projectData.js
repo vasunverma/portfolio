@@ -27,7 +27,6 @@ const projectData = [
       title: "Smart Air Purifier",
       description: "A budget-friendly smart air purifier was designed and developed using C++, Arduino, AWS IoT, HTML/CSS, JavaScript, and P5.js. The purifier integrated dust, temperature, and humidity sensors to provide real-time air quality feedback. It featured an automatic switch-on function triggered by high dust density and utilized MQTT protocol for real-time communication with the web app. The purifier effectively cleaned indoor air using HEPA H13 and activated carbon filters.",
       image: require("../assets/SmartAirPurifierProject.jpg"),
-      githubLink: "https://github.com/vasunverma/binary-classification-high-dim-data",
       tags: ["C++", "Arduino", "AWS IoT", "JavaScript", "HTML/CSS", "P5.js", "MQTT"],
       tagColor: ["blue", "red", "yellow", "orange", "teal", "green", "purple"],
       rowSpan: 1,

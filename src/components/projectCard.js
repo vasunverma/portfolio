@@ -58,9 +58,11 @@ const ProjectCard = ({ project, isMobile }) => {
                 <FontAwesomeIcon icon={faSquareArrowUpRight} style={{ color: "#d121c9" }} />
               </Link>
                 : null}
+              {project.githubLink ?
               <Link href={project.githubLink} target="_blank" rel="noreferrer" style={{ marginLeft: "10px" }}>
                 <FontAwesomeIcon icon={faGithub} style={{ color: "#d121c9" }} />
               </Link>
+                : null}
             </Heading>
             <Text>
               {renderTextContent(project.description, 100)}
@@ -88,9 +90,11 @@ const ProjectCard = ({ project, isMobile }) => {
                 <FontAwesomeIcon icon={faSquareArrowUpRight} style={{ color: "#d121c9" }} />
               </Link>
                 : null}
+              {project.githubLink ?
               <Link href={project.githubLink} target="_blank" rel="noreferrer" style={{ marginLeft: "10px" }}>
                 <FontAwesomeIcon icon={faGithub} style={{ color: "#d121c9" }} />
               </Link>
+                : null}
             </Heading>
             <Text>
               {renderTextContent(project.description, 170)}
