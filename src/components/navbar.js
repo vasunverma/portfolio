@@ -19,6 +19,14 @@ export const Navbar = () => {
         handleResize();
     }, []);
 
+    const navbarStyle = {
+        position: "sticky",
+        top: "0",
+        zIndex: "1",
+        opacity: "0.9",
+        backgroundColor: "#202023",
+    };
+
     return (
             isMobile ? (
                 <Flex
@@ -27,12 +35,9 @@ export const Navbar = () => {
                     justifyContent="center"
                     margin="auto"
                     maxWidth="800px"
-                    position="sticky"
                     pt="30px"
-                    backgroundColor="#202023"
-                    top="0"
-                    zIndex="1"
-                    opacity="0.9">
+                    style={navbarStyle}
+                    >
 
                     <HStack spacing="10px">
                         <ScrollLink style={{ cursor: 'pointer' }} to="home" spy={true} smooth={true} offset={-90} duration={500}><Heading size='md'>vasuv._</Heading></ScrollLink>
@@ -75,12 +80,9 @@ export const Navbar = () => {
                 justifyContent="center"
                 margin="auto"
                 maxWidth="800px"
-                position="sticky"
                 pt="30px"
-                backgroundColor="#202023"
-                top="0"
-                zIndex="1"
-                opacity="0.9">
+                style={navbarStyle}
+                >
                 <HStack spacing="10px">
                     <ScrollLink style={{ cursor: 'pointer' }} to="home" spy={true} smooth={true} offset={-90} duration={500}><Heading size='md'>vasuv._</Heading></ScrollLink>
                 </HStack>
