@@ -1,34 +1,7 @@
 .App {
-  background-color: #202023;
-  /* background-color: #4158D0;
-  background-image: linear-gradient(23deg, #4158D0 0%, #a2489a 30%, #000000 100%); */
-  color: #f0e7db;
+  color: #f8e7d1;
   padding-left: 20px;
   padding-right: 20px;
-}
-
-.cursor {
-  width: 30px;
-  height: 30px;
-  border: 1px solid rgba(28, 255, 225, 0.89);
-  border-radius: 50%;
-  position: absolute;
-  transition-duration: 200ms;
-  transition-timing-function: ease-out;
-  pointer-events: none;
-  z-index: 2;
-}
-
-.cursor::after {
-  content: "";
-  width: 7px;
-  height: 7px;
-  position: absolute;
-  background-color: rgba(28, 255, 225, 0.89);
-  border-radius: 50%;
-  opacity: .5;
-  top: 10px;
-  left: 10px;
 }
 
 /* Set the scrollbar width and color */
