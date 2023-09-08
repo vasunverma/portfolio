@@ -25,10 +25,9 @@ export const Experience = () => {
         justifyContent="center" margin="auto" 
         direction="column" id="experience" maxWidth="800px">
             <Heading p="20px 20px 20px 0px" justifyContent="center" display="flex">Where I've Worked</Heading>
-                    <Accordion allowToggle defaultIndex={[0, 1]}>
                     {isMobile ?
                         (   
-                            <>
+                            <Accordion allowToggle>
                                     <AccordionItem mb={4} border="none" >
                                         <AccordionButton  _hover={{}} backgroundColor="#740cdc" borderRadius="10px">
                                             <Box><Text fontSize="12px"> Software Engineer @ Amdocs </Text></Box>
@@ -73,9 +72,54 @@ export const Experience = () => {
                                                 </VStack>
                                             </AccordionPanel>
                                         </AccordionItem>
-                                </>
+                                        <AccordionItem mb={4} border="none" >
+                                        <AccordionButton  _hover={{}} backgroundColor="#740cdc" borderRadius="10px">
+                                            <Box><Text fontSize="11px"> Software Engineer Intern @ OYO Rooms </Text></Box>
+                                            <Spacer />  
+                                            <Box><Text fontSize="11px">2020 - 2020</Text></Box>
+                                            <Box display="flex"><Icon as={AccordionIcon} /></Box>
+                                        </AccordionButton>
+                                        <AccordionPanel mt="20px" p={4} backgroundColor="#241d41" borderRadius="10px">
+                                                <VStack>
+                                                    <Box w="100%" ml="0px">
+                                                        <Image w="20%" src={OYOLogo} alt="OYO Logo" />
+                                                    </Box>
+                                                    <Box textAlign="justify" justifyContent="center" w="100%">
+                                                        <VStack >
+                                                            <Box w="100%">
+                                                                <HStack direction='row' w="100%">
+                                                                <FontAwesomeIcon icon={faLocationDot} style={{color: "#9827a5",}} />
+                                                                    <Text>Gurgaon, India</Text>
+                                                                    <div/>
+                                                                    <a href="https://www.oyorooms.com/" target="_blank" rel="noreferrer">
+                                                                        <FontAwesomeIcon icon={faSquareArrowUpRight} style={{color: "#d121c9"}} /> oyorooms.com
+                                                                    </a>
+                                                                </HStack>
+                                                            </Box>
+                                                            <Spacer />
+                                                            <Box>
+                                                                As a member of the Invoice and Finance Dev team, my primary responsibilities involved working on various aspects of the team's projects. This included 
+                                                                developing APIs for internal use, transitioning the invoice microservice from Rails to Spring Boot, automating the manual task of inputting invoice data 
+                                                                into the system, and creating new invoice templates to accommodate the company's expansion into new regions.
+                                                            </Box>
+                                                            <Spacer />
+                                                            <Box w="100%">
+                                                                    <Code m="5px" colorScheme="blue" children="Ruby" />
+                                                                    <Code m="5px" colorScheme="red" children="Rails" />
+                                                                    <Code m="5px" colorScheme="teal" children="PostgreSQL" />
+                                                                    <Code m="5px" colorScheme="pink" children="JAVA" />
+                                                                    <Code m="5px" colorScheme="orange" children="SpringBoot" />
+                                                                    <Code m="5px" colorScheme="purple" children="AWS S3" />
+                                                            </Box>
+                                                        </VStack>
+                                                    </Box>
+                                                </VStack>
+                                                </AccordionPanel>
+                                    </AccordionItem>
+                                </Accordion>
+                                
                         ) : (
-                            <>
+                            <Accordion allowToggle defaultIndex={[0,1]}>
                                     <AccordionItem mb={4} border="none" >
                                     <AccordionButton  _hover={{}} backgroundColor="#740cdc" borderRadius="10px">
                                         <Box><Text> Software Engineer @ Amdocs </Text></Box>
@@ -122,58 +166,7 @@ export const Experience = () => {
                             </HStack>
                             </AccordionPanel>
                             </AccordionItem>
-                            </>
-                        )}
-                    {isMobile ? 
-                        (   
-                            <>
-                    <AccordionItem mb={4} border="none" >
-                    <AccordionButton  _hover={{}} backgroundColor="#740cdc" borderRadius="10px">
-                        <Box><Text fontSize="11px"> Software Engineer Intern @ OYO Rooms </Text></Box>
-                        <Spacer />  
-                        <Box><Text fontSize="11px">2020 - 2020</Text></Box>
-                        <Box display="flex"><Icon as={AccordionIcon} /></Box>
-                    </AccordionButton>
-                    <AccordionPanel mt="20px" p={4} backgroundColor="#241d41" borderRadius="10px">
-                            <VStack>
-                                <Box w="100%" ml="0px">
-                                    <Image w="20%" src={OYOLogo} alt="OYO Logo" />
-                                </Box>
-                                <Box textAlign="justify" justifyContent="center" w="100%">
-                                    <VStack >
-                                        <Box w="100%">
-                                            <HStack direction='row' w="100%">
-                                            <FontAwesomeIcon icon={faLocationDot} style={{color: "#9827a5",}} />
-                                                <Text>Gurgaon, India</Text>
-                                                <div/>
-                                                <a href="https://www.oyorooms.com/" target="_blank" rel="noreferrer">
-                                                    <FontAwesomeIcon icon={faSquareArrowUpRight} style={{color: "#d121c9"}} /> oyorooms.com
-                                                </a>
-                                            </HStack>
-                                        </Box>
-                                        <Spacer />
-                                        <Box>
-                                            As a member of the Invoice and Finance Dev team, my primary responsibilities involved working on various aspects of the team's projects. This included 
-                                            developing APIs for internal use, transitioning the invoice microservice from Rails to Spring Boot, automating the manual task of inputting invoice data 
-                                            into the system, and creating new invoice templates to accommodate the company's expansion into new regions.
-                                        </Box>
-                                        <Spacer />
-                                        <Box w="100%">
-                                                <Code m="5px" colorScheme="blue" children="Ruby" />
-                                                <Code m="5px" colorScheme="red" children="Rails" />
-                                                <Code m="5px" colorScheme="teal" children="PostgreSQL" />
-                                                <Code m="5px" colorScheme="pink" children="JAVA" />
-                                                <Code m="5px" colorScheme="orange" children="SpringBoot" />
-                                                <Code m="5px" colorScheme="purple" children="AWS S3" />
-                                        </Box>
-                                    </VStack>
-                                </Box>
-                            </VStack>
-                            </AccordionPanel>
-                </AccordionItem>
-                </>
-                        ) : (
-                            <>
+
                             <AccordionItem mb={4} border="none" >
                     <AccordionButton  _hover={{}} backgroundColor="#740cdc" borderRadius="10px">
                         <Box><Text> Software Engineer Intern @ OYO Rooms </Text></Box>
@@ -220,10 +213,8 @@ export const Experience = () => {
                             </HStack>
                             </AccordionPanel>
                 </AccordionItem>
-                </>
-                        )}
-
-            </Accordion>
+                </Accordion>
+            )}
         </Flex>
     );
 };

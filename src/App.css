@@ -2,9 +2,10 @@
   color: #f8e7d1;
   padding-left: 20px;
   padding-right: 20px;
+  overflow: hidden;
 }
 
-/* Set the scrollbar width and color */
+Set the scrollbar width and color
 ::-webkit-scrollbar {
   width: 6px;
 }
