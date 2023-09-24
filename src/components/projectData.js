@@ -13,6 +13,17 @@ const projectData = [
     },
     {
       id: 2,
+      title: "Music MatchMaker",
+      description: "Music MatchMaker is a recommendation system for music utilizing a custom Natural Language Processing model. Preprocessed and analyzed song lyrics using TF-IDF vectorization and cosine similarity to generate song recommendations based on user preferences. Integrated this model into a Flask application, enhancing user experience by providing direct Spotify links to the recommended songs.",
+      image: require("../assets/MusicMatchmaker.png"),
+      githubLink: "https://github.com/vasunverma/MusicMatchmaker",
+      tags: ["sklearn", "pandas", "TfidfVectorizer", "PorterStemmer", "Python", "Flask", "Spotify API", "JavaScript", "HTML/CSS"],
+      tagColor: ["blue", "red", "yellow", "orange", "teal", "green", "purple", "pink", "red", "yellow"],
+      rowSpan: 1,
+      columnSpan: 2,
+    },
+    {
+      id: 3,
       title: "Binary Classification with High-Dimensional Data",
       description: "Binary classification models were developed using R, Caret, Baruta, XgBoost, Tensorflow, Keras, and RandomForest for binary classification with high-dimensional data. Predictor reduction techniques were applied, achieving 20 predictors while maintaining high predictive power. Rigorous cross-validation techniques led to 82% accuracy on the validation set, accompanied by insightful visualizations and statistical summaries.",
       image: require("../assets/BinaryClassificationProject.png"),
@@ -23,7 +34,7 @@ const projectData = [
       columnSpan: 2,
     },
     {
-      id: 3,
+      id: 4,
       title: "Smart Air Purifier",
       description: "A budget-friendly smart air purifier was designed and developed using C++, Arduino, AWS IoT, HTML/CSS, JavaScript, and P5.js. The purifier integrated dust, temperature, and humidity sensors to provide real-time air quality feedback. It featured an automatic switch-on function triggered by high dust density and utilized MQTT protocol for real-time communication with the web app. The purifier effectively cleaned indoor air using HEPA H13 and activated carbon filters.",
       image: require("../assets/SmartAirPurifierProject.jpg"),
@@ -33,7 +44,7 @@ const projectData = [
       columnSpan: 2,
     },
     {
-        id: 4,
+        id: 5,
         title: "Timer App",
         description: "Timer App is a sleek and user-friendly desktop application developed with Electron.js, providing a seamless and customizable timer experience for various purposes.",
         // image: require("../assets/SmartAirPurifierProject.jpg"),
@@ -44,7 +55,7 @@ const projectData = [
         columnSpan: 1,
     },
     {
-        id: 5,
+        id: 6,
         title: "URL Shortener",
         description: "URL Shortener is a web application developed using Flask, HTML, and CSS. It enables users to shorten long URLs and provides a convenient way to share them.",
         // image: require("../assets/SmartAirPurifierProject.jpg"),

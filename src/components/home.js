@@ -22,7 +22,7 @@ export const Home = () => {
                     <Heading as='h1' size="xl">Vasu Naman Verma</Heading>
                     <br/>
                     <VStack>
-                        <Heading as='h3' size='sm' p="0px 20px 20px 0px" style={{marginTop: "0px"}}>Software Engineer</Heading>
+                        <Heading as='h3' size='sm' style={{marginTop: "0px"}}>Software Engineer | Data Engineer</Heading>
                     </VStack>
                     <Box mt="30px">
                         <Image w="320px" h="350px" src={PortraitImage} alt='Progammer Working' />
@@ -37,7 +37,7 @@ export const Home = () => {
                     <VStack style={{marginLeft: "20px"}}>
                         <Heading as='h1' size="xl">Vasu Naman Verma</Heading>
                         <br/>
-                        <Heading as='h2' size='md' p="0px 20px 20px 0px" style={{marginTop: "0px"}}>Software Engineer</Heading>
+                        <Heading as='h2' size='md'  style={{marginTop: "0px"}}>Software Engineer | Data Engineer</Heading>
                     </VStack>
                     </HStack>
                 </>

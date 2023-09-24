@@ -4,8 +4,6 @@ import { BsGithub, BsLinkedin} from 'react-icons/bs';
 import { MdEmail } from 'react-icons/md';
 import { useEffect, useState } from "react";
 
-
-
 export const Contact = () => {
 
     const { hasCopied, onCopy } = useClipboard('vermavasun@gmail.com');

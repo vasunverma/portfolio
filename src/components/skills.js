@@ -1,5 +1,4 @@
 import { Flex, Wrap, Heading, VStack} from "@chakra-ui/react";
-import { useState, useEffect } from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {  faSquareArrowUpRight } from '@fortawesome/free-solid-svg-icons'
 import "../stylesheets/skills.css";
@@ -38,6 +37,18 @@ export const Skills = () => {
                         <span className="developmentTags">REST</span>
                         <span className="developmentTags">Heroku</span>
                         <span className="developmentTags">Git</span>
+                    </Wrap>
+                </VStack>
+                <VStack mb="30px">
+                    <Heading size="md" mb="20px" display="flex" justifyContent="center">Machine Learning</Heading>
+                    <Wrap spacing="20px" justify="center" w="400px">
+                        <span className="developmentTags">Python</span>
+                        <span className="developmentTags">R</span>
+                        <span className="developmentTags">SQL</span>
+                        <span className="developmentTags">TensorFlow</span>
+                        <span className="developmentTags">Keras</span>
+                        <span className="developmentTags">OpenCV</span>
+                        <span className="developmentTags">Big Data</span>
                     </Wrap>
                 </VStack>
                 <VStack>

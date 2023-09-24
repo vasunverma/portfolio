@@ -14,7 +14,7 @@ export const About = () => {
                     <Heading p="20px 20px 20px 0px" justifyContent="center" display="flex">About Me</Heading>
                     <Text textAlign="justify" justifyContent="center">
                         I am an extremely enthusiastic, detail-oriented and 
-                        smart-working engineer who is always on the lookout 
+                        diligent engineer who is always on the lookout 
                         for opportunities that motivate and challenge me everyday.
                     </Text>
                     <br />
