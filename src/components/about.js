@@ -20,7 +20,6 @@ export const About = () => {
                     <br />
                     <Text textAlign="justify" justifyContent="center">
                     I have experience working with a variety of technologies, handling both backend and frontend development. 
-                    Currently, I am actively engaged in prepartion for AWS Certified Solutions Architect Associate exam. 
                     My primary objective is to develop high-performing applications that effectively address real-world challenges and deliver an exceptional user experience.
                     </Text>
                     <br />

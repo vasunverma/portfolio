@@ -9,6 +9,7 @@ import { Skills } from './components/skills';
 import { LoadingScreen } from './components/loading';
 import { ScrollToTopButton } from './components/scrollToTop';
 import { useEffect, useState } from 'react';
+import { Education } from './components/education';
 
 function App() {
 
@@ -34,6 +35,7 @@ function App() {
           <Home></Home>
           <About></About>
           <Skills></Skills>
+          <Education></Education>
           <Experience></Experience>
           <Projects></Projects>
           <Contact></Contact>

@@ -64,7 +64,7 @@ const ProjectCard = ({ project, isMobile }) => {
               </Link>
                 : null}
             </Heading>
-            <Text>
+            <Text whiteSpace="pre-line">
               {renderTextContent(project.description, 100)}
             </Text>
             <Link onClick={toggleShowFullText} cursor="pointer" color="#d121c9">
@@ -96,7 +96,7 @@ const ProjectCard = ({ project, isMobile }) => {
               </Link>
                 : null}
             </Heading>
-            <Text>
+            <Text whiteSpace="pre-line">
               {renderTextContent(project.description, 170)}
             </Text>
             <Link onClick={toggleShowFullText} cursor="pointer" color="#d121c9">

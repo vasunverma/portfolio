@@ -1,0 +1,63 @@
+.educationSection{
+    margin: 30px 0;
+}
+
+.timeline {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+}
+
+.year, .degree {
+    display: flex; /* Ensure the children are flex items */
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+    width: 220px;
+    padding: 0 20px;
+}
+
+.yy {
+    border-width: 2px;
+    border-color: #8719B2;
+    border-radius: 25px;
+    padding: 10px;
+}
+
+.clg {
+    background-color: #241d41;
+    padding: 10px;
+    border-radius: 25px;
+}
+
+.year {
+    border-right: 2.5px solid #8719B2; /* Add border style */
+    text-align: right;
+    position: relative; /* Necessary to position pseudo-element */
+}
+
+.degree {
+    border-left: 2.5px solid #8719B2; /* Add border style */
+    text-align: left;
+    position: relative; /* Necessary to position pseudo-element */
+}
+
+.circle {
+    width: 20px; /* Adjust size as needed */
+    height: 20px; /* Adjust size as needed */
+    border: 2.5px solid #8719B2; /* Border style */
+    border-radius: 50%;
+    background-color: white; /* No color inside */
+    position: absolute;
+    left: calc(50% - 20px); /* Center the circle on the border */
+    transform: translateX(50%); /* Align the circle */
+    z-index: 2; /* Ensure it appears above the pseudo-elements */
+}
