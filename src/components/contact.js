@@ -1,6 +1,9 @@
 import { useClipboard, Flex, Text, Heading, IconButton, useColorModeValue, 
-        Link, Stack, Tooltip} from "@chakra-ui/react";
+        Link, Stack, Tooltip, Icon} from "@chakra-ui/react";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { BsGithub, BsLinkedin} from 'react-icons/bs';
+import { faReact } from '@fortawesome/free-brands-svg-icons';
+import { SiChakraui } from "react-icons/si";
 import { MdEmail } from 'react-icons/md';
 import { useEffect, useState } from "react";
 
@@ -78,9 +81,19 @@ export const Contact = () => {
                 </Stack>
                 <br/>
                 {isMobile ? (
-                    <Text fontSize="10px" color="grey">© 2023 Vasu Naman Verma. All Rights Reserved.</Text>
+                    <Text fontSize="20px">
+                    Made with ❤️ using <FontAwesomeIcon icon={faReact} style={{ color: "#d121c9" }} /> + <Icon as={SiChakraui}  style={{ color: "#d121c9", marginBottom: "-3px" }} />
+                    </Text>
                 ): (
-                    <Text color="grey">© 2023 Vasu Naman Verma. All Rights Reserved.</Text>
+                    <Text fontSize="20px">
+                    Made with ❤️ using <FontAwesomeIcon icon={faReact} style={{ color: "#d121c9" }} /> + <Icon as={SiChakraui}  style={{ color: "#d121c9", marginBottom: "-3px" }} />
+                    </Text>
+                )}
+                <br/>
+                {isMobile ? (
+                    <Text fontSize="10px" color="grey">© 2024 Vasu Naman Verma. All Rights Reserved.</Text>
+                ): (
+                    <Text color="grey">© 2024 Vasu Naman Verma. All Rights Reserved.</Text>
                 )}
             </Flex>
         );
