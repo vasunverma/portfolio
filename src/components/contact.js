@@ -40,6 +40,7 @@ export const Contact = () => {
                         aria-label="email"
                         variant="ghost"
                         size="lg"
+                        color="white"
                         fontSize="3xl"
                         icon={<MdEmail />}
                         _hover={{
@@ -56,6 +57,7 @@ export const Contact = () => {
                         aria-label="github"
                         variant="ghost"
                         size="lg"
+                        color="white"
                         fontSize="3xl"
                         icon={<BsGithub />}
                         _hover={{
@@ -70,6 +72,7 @@ export const Contact = () => {
                         aria-label="linkedin"
                         variant="ghost"
                         size="lg"
+                        color="white"
                         icon={<BsLinkedin size="28px" />}
                         _hover={{
                             bg: 'blue.500',
