@@ -4,7 +4,7 @@ import '../stylesheets/education.css';
 
 export const Education = () => {
     return (
-        <div class="educationSection">
+        <div id="education" class="educationSection">
             <Heading p="20px 20px 20px 0px" justifyContent="center" display="flex">Where I've Studied</Heading>
             <div className="timeline">
                 <div className="container">

@@ -79,6 +79,8 @@ export const Navbar = () => {
                                         <br/>
                                         <ScrollLink style={{ cursor: "pointer", paddingBottom: "20px"  }} to="skills" spy={true} smooth={true} offset={-50} duration={500} onClick={onClose}>Skills</ScrollLink>
                                         <br/>
+                                        <ScrollLink style={{ cursor: "pointer", paddingBottom: "20px"  }} to="education" spy={true} smooth={true} offset={-50} duration={500} onClick={onClose}>Education</ScrollLink>
+                                        <br/>
                                         <ScrollLink style={{ cursor: "pointer", paddingBottom: "20px"  }} to="experience" spy={true} smooth={true} offset={-50} duration={500} onClick={onClose}>Experience</ScrollLink>
                                         <br/>
                                         <ScrollLink style={{ cursor: "pointer", paddingBottom: "20px"  }} to="projects" spy={true} smooth={true} offset={-50} duration={500} onClick={onClose}>Projects</ScrollLink>
@@ -107,6 +109,7 @@ export const Navbar = () => {
                 <VStack spacing="20px" marginTop="100px">
                     <ScrollLink style={{ cursor: "pointer" }} to="about" spy={true} smooth={true} offset={-30} duration={500}>About</ScrollLink>
                     <ScrollLink style={{ cursor: "pointer" }} to="skills" spy={true} smooth={true} offset={-30} duration={500}>Skills</ScrollLink>
+                    <ScrollLink style={{ cursor: "pointer" }} to="education" spy={true} smooth={true} offset={-30} duration={500}>Education</ScrollLink>
                     <ScrollLink style={{ cursor: "pointer" }} to="experience" spy={true} smooth={true} offset={-30} duration={500}>Experience</ScrollLink>
                     <ScrollLink style={{ cursor: "pointer" }} to="projects" spy={true} smooth={true} offset={-30} duration={500}>Projects</ScrollLink>
                     <ScrollLink style={{ cursor: "pointer" }} to="contact" spy={true} smooth={true} offset={-30} duration={1000}>Contact</ScrollLink>

@@ -4,12 +4,12 @@ import { Home } from './components/home'
 import { About } from './components/about'
 import { Projects } from './components/projects'
 import { Contact } from './components/contact'
+import { Education } from './components/education';
 import { Experience } from './components/experience';
 import { Skills } from './components/skills';
 import { LoadingScreen } from './components/loading';
 import { ScrollToTopButton } from './components/scrollToTop';
 import { useEffect, useState } from 'react';
-import { Education } from './components/education';
 
 function App() {
 
@@ -31,7 +31,7 @@ function App() {
   return (
     loading ? <LoadingScreen /> :
         <div className="App" style={containerStyle}>
-          <Navbar ></Navbar>
+          <Navbar></Navbar>
           <Home></Home>
           <About></About>
           <Skills></Skills>
